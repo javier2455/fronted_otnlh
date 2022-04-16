@@ -9,7 +9,7 @@ const Footer = () => {
       </strong>
       Todos los derechos reservados. */}
       <div className="float-right d-none d-sm-inline-block">
-        <b>Version</b> 0.3.3
+        <b>Version</b> 0.3.4
       </div>
     </footer>
   );
