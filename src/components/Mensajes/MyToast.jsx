@@ -1,0 +1,40 @@
+import React from "react";
+//import { /*  Row, Col, */ Toast, ToastContainer, Form } from "react-bootstrap";
+
+const MyToast = ({ setMostrar, msg }) => {
+
+  setTimeout(() => {
+    setMostrar(false);
+  }, 4000);
+
+  return (
+    <>
+      <div id="toastsContainerBottomRight" className="toasts-bottom-right">
+        <div
+          className={`toast bg-${msg.tipo} fade show mr-3`}
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div className="toast-header">
+            <strong className="mr-auto">{msg.titulo}</strong>
+            <small></small>
+            <button
+              data-dismiss="toast"
+              type="button"
+              className="ml-2 mb-1 close"
+              aria-label="Close"
+            >
+              <span onClick={() => setMostrar(false)} aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div className="toast-body">
+            {msg.msg}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default MyToast;

@@ -1,0 +1,10 @@
+{
+    "rutasDesarrollo": {
+        "rutaUsuarios": "http://localhost:5000/usuarios",
+        "rutaTrazas": "http://localhost:5000/trazas"
+    },
+
+    "rutasProduccion": {
+        
+    }
+}
