@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import img from "../img/person-digging-solid.svg"
 
 const UnderConstruct = () => {
@@ -14,7 +15,7 @@ const UnderConstruct = () => {
                         <h3><i className="fas fa-exclamation-triangle text-warning"></i> Lo sentimos. Página en contrucción.</h3>
                         <p>
                             Por favor disculpen las molestias que puedan causar nuestro sistema en mantenimiento.
-                            Le agradecemos su comprensión, en su lugar por favor visite nuestro enlace <a href="/">Indicadores</a>
+                            Le agradecemos su comprensión, en su lugar por favor visite nuestro enlace <Link to="/home">Inicio</Link>
                         </p>
                     </div >
                 </div >
