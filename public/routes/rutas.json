@@ -5,6 +5,10 @@
     },
 
     "rutasProduccion": {
-        
+        "rutaLogin": "http://192.168.8.38:8000/iniciar-sesion",
+        "rutaCloseSession": "http://192.168.8.38:8000/cerrar-sesion",
+        "rutaUsuarios": "http://192.168.8.38:8000/gestionar-usuarios",
+        "rutaGestionarPermisos": "http://192.168.8.38:8000/gestionar-permisos",
+        "rutaGestionarGrupos": "http://192.168.8.38:8000/gestionar-grupos"
     }
 }

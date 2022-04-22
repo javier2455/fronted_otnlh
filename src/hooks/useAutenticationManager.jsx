@@ -5,7 +5,8 @@ import { helpHttp } from "../helpers/helpHttp";
 
 export const useAutenticationManager = () => {
   const [userData, setUserData] = useState([]);
-  const [ruta, setRuta] = useState(null)
+  const [ruta, setRuta] = useState(null);
+  const [rutaCerrarSesion, setRutaCerrarSesion] = useState(null)
 
   let history = useHistory();
 
@@ -28,6 +29,14 @@ export const useAutenticationManager = () => {
             }
           })
       })
+
+    helpHttp()
+      .get("./routes/rutas.json")
+      .then(response => {
+        setRutaCerrarSesion(response.rutasProduccion.rutaCloseSession);
+      })
+
+
   }, []);
 
 
@@ -78,22 +87,48 @@ export const useAutenticationManager = () => {
 
   //Verfica que la sesión este activa
   const inSession = () => {
-    let user = JSON.parse(sessionStorage.getItem("userAuth"));
+    let user = JSON.parse(sessionStorage.getItem("userAccount"));
     if (!user) {
       history.push("/");
     }
+    /* let user = JSON.parse(sessionStorage.getItem("userAuth"));
+    if (!user) {
+      history.push("/");
+    } */
   };
 
   //cierra la sesión
-  const closeSession = () => {
+  const closeSession = ( ) => {
+    /* let userAccount = JSON.parse(sessionStorage.getItem("userAccount"));
+    console.log(userAccount.datos)
+    //console.log(rutaCerrarSesion);
+    let cuerpo = {
+      headers: { 
+        "content-type": "application/json",
+        "Authorization": `Token ${userAccount.datos}`
+      },
+    };
+    helpHttp().post(rutaCerrarSesion, cuerpo).then((res) => {
+      if (!res.error) {
+        console.log(res)
+      } else {
+        console.log(res);
+      }
+    }); */
+
     sessionStorage.removeItem("userAuth");
     history.push("/");
   };
+
+  const ConfirmValidation = (objeto) => {
+    sessionStorage.setItem("userAccount", JSON.stringify(objeto));
+  }
 
   return {
     ValidateUser,
     inSession,
     closeSession,
+    ConfirmValidation
   };
 };
 

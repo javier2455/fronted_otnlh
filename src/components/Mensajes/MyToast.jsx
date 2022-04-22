@@ -9,7 +9,8 @@ const MyToast = ({ setMostrar, msg }) => {
 
   return (
     <>
-      <div id="toastsContainerBottomRight" className="toasts-bottom-right">
+      <div id="toastsContainerBottomRight" className="toasts-bottom-right mb-1">
+      {/* <div id="toastsContainerTopCenter" className="toasts-top-center mb-1"> */}
         <div
           className={`toast bg-${msg.tipo} fade show mr-3`}
           role="alert"
@@ -17,6 +18,7 @@ const MyToast = ({ setMostrar, msg }) => {
           aria-atomic="true"
         >
           <div className="toast-header">
+            <i className={`${msg.icono} mr-1`}></i>
             <strong className="mr-auto">{msg.titulo}</strong>
             <small></small>
             <button

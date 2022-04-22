@@ -11,7 +11,9 @@
       "email": "marlon@gmail.com",
       "is_staff": false,
       "is_active": false,
-      "date_joined": "12/4/2022"
+      "date_joined": "12/4/2022",
+      "groups": [],
+      "user_permissions": []
     },
     {
       "id": 1649766453191,
@@ -24,7 +26,9 @@
       "email": "serv.prieta@gmail.com",
       "is_staff": false,
       "is_active": false,
-      "date_joined": "12/4/2022"
+      "date_joined": "12/4/2022",
+      "groups": [],
+      "user_permissions": []
     },
     {
       "id": 1649766472207,
@@ -37,33 +41,37 @@
       "email": "robert.lewan@gmail.com",
       "is_staff": true,
       "is_active": false,
-      "date_joined": "12/4/2022"
+      "date_joined": "12/4/2022",
+      "groups": [],
+      "user_permissions": []
     },
     {
       "id": 1649766489631,
       "password": "kriusthe",
       "last_login": "",
       "is_superuser": false,
-      "username": "yeseDragon",
+      "username": "Kariusdragon",
       "first_name": "Karius",
       "last_name": "The Dragon Knight",
       "email": "karius@gmail.com",
       "is_staff": false,
       "is_active": false,
-      "date_joined": "16/4/2022"
+      "date_joined": "19/4/2022",
+      "groups": [],
+      "user_permissions": []
     },
     {
-      "id": 12,
-      "password": "12345",
+      "id": 17,
+      "password": "asdsad",
       "last_login": null,
-      "is_superuser": true,
-      "username": "yccrespo",
-      "first_name": "Yesenia",
-      "last_name": "Crespo Abreu",
-      "email": "yesenia.crespo@gmail.com",
+      "is_superuser": false,
+      "username": "asdasd",
+      "first_name": "asd",
+      "last_name": "sad asd",
+      "email": "asd@gmail.com",
       "is_staff": true,
       "is_active": false,
-      "date_joined": "16/4/2022",
+      "date_joined": "19/4/2022",
       "groups": [],
       "user_permissions": []
     }
@@ -451,18 +459,75 @@
   "trazas": [
     {
       "id": 1,
-      "fecha_creada": "24-07-2021",
-      "nombre": "Registro 24"
+      "action_time": "24/04/2021",
+      "object_id": "1",
+      "object_repr": "2425-5796",
+      "action_flag": "red",
+      "change_message": "change 1",
+      "user": "admin",
+      "content_type": "cursos"
     },
     {
       "id": 2,
-      "fecha_creada": "25-07-2021",
-      "nombre": "Registro 42"
+      "action_time": "30/10/2021",
+      "object_id": "2",
+      "object_repr": "4423-0060",
+      "action_flag": "green",
+      "change_message": "change 3",
+      "user": "admin",
+      "content_type": "clientes"
     },
     {
       "id": 3,
-      "fecha_creada": "07-02-2022",
-      "nombre": "Análisis Estético"
+      "action_time": "01/01/2022",
+      "object_id": "3",
+      "object_repr": "8236-8511",
+      "action_flag": "blue",
+      "change_message": "change 2",
+      "user": "admin",
+      "content_type": "cursos"
+    }
+  ],
+  "nomencladores": [
+    {
+      "id": 1,
+      "tipo": "Tipo de Contrato",
+      "nombre": "PCC"
+    },
+    {
+      "id": 2,
+      "tipo": "Organismo",
+      "nombre": "FMC"
+    },
+    {
+      "id": 3,
+      "tipo": "Empresa",
+      "nombre": "TransTur"
+    },
+    {
+      "id": 4,
+      "tipo": "Empresa",
+      "nombre": "CubaSin"
+    },
+    {
+      "id": 5,
+      "tipo": "Sector Estatal",
+      "nombre": "Onat"
+    },
+    {
+      "id": 6,
+      "tipo": "Sector Estatal",
+      "nombre": "ONDT"
+    },
+    {
+      "id": 7,
+      "tipo": "Sector Estatal",
+      "nombre": "ONDT"
+    },
+    {
+      "id": 8,
+      "tipo": "Sector Estatal",
+      "nombre": "ONDT"
     }
   ]
 }

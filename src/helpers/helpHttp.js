@@ -22,11 +22,12 @@ export const helpHttp = () => {
         return fetch(endpoint, options)
             .then((res) => res.ok
                 ? res.json()
-                : Promise.reject({
+                : res.json()
+                /* Promise.reject({
                     error: true,
                     status: res.status || "Error 00: La API no devolvio ningún status de error",
-                    statusText: res.statusText || "Ocurrió un error"
-                }))
+                    statusText: res.statusText || "Ocurrió un error",
+                }) */)
             .catch((err) => err)
     }
 
